@@ -1,0 +1,99 @@
+
+.logo
+{   
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 2%;
+}
+
+#headName
+{
+  font-family: 'Pacifico', cursive;
+  font-size:30px;
+}
+
+#subHead
+{
+  font-family: 'Pacifico', cursive;
+  font-size:20px;
+}
+
+.textStyle
+{
+  font-family: 'Assistant', sans-serif;
+  font-size:20px;
+}
+
+.text_input
+{
+  border-radius:10px;
+  
+  background: linear-gradient(to bottom, #399b82 0%, #122c21 100%);   
+  text-align: center;
+  padding: 1%;
+  margin-left: 400px;
+  margin-right: 400px;
+}
+
+#div_input1
+{
+	
+}
+
+#image
+{
+  opacity: 0.5;
+  margin-top: 2%;
+  border-radius: 50%;
+  filter:brightness(90%);
+  box-shadow: 10px 10px 10px #021b13;
+  height:30%;
+  width:30%;
+}
+
+#displayName
+{
+  font-family: 'Assistant', sans-serif;
+  font-size: 25px;
+  font-weight: 600; 
+}
+
+#button1, #button2, #button3, #button4, #button5
+{
+  font-family: 'Assistant', sans-serif;
+  font-size:20px;
+  background-color: #021b13;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#div_inp
+{
+  display:none;
+}
+
+#confirm
+{
+  display:none;
+}
+
+#chooseQuestion
+{
+  display:none;
+}
+
+#askNext
+{
+  display:none;
+}
+
+#copyQues
+{
+  display:none;
+}

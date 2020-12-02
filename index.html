@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Assistant&family=Pacifico&display=swap" rel="stylesheet">
+  <title>Magic 8 Ball</title>
+</head>
+
+<body style="background-image: url('magic1.gif'); background-size: cover;">
+
+<div class="logo">
+	<img src="./greenball.jpg" id="image">
+</div>
+
+<div class="text_input">
+
+<div id="headName"><p>Magic 8 Ball</p></div>
+<div id="subHead"><p>Your Fortune Teller</p></div>
+<div  style="border-bottom: 1px solid black;"></div>
+
+<form action="" method="post">
+<div id="div_input1">
+  <h3><label for="name" class="textStyle">What's your Name ?</label></h3>
+  <input type="text" id="name" name="name">
+</div>
+<div class="button">
+  <input type="button" id="button1" onclick="welcome()" value="Submit">
+</div>
+</form>
+
+<p id="displayName"></p>
+<div id="confirm">
+   <h3><label for="name" class="textStyle">Want to know your Fortune ?</label></h3>
+  <input type="radio" id="yesProceed" name="condition" value="yes">
+  <label for="conditiont" class="textStyle">Yes</label>
+  <input type="radio" id="dontProceed" name="condition" value="no">
+  <label for="condition" class="textStyle">No</label>
+  <div class="button">
+    <input type="button" id="button2" onclick="confirmation()"  value="Proceed">
+  </div>
+</div>
+ <h2 id="terminate" class="textStyle"></h2>
+  
+<div id="chooseQuestion">
+<h3 class="textStyle">So... what do you want to know ?</h3></br>
+<div id="questions" style="text-align: left">
+  <input type="radio" id="ques1" name="condition" value="Ques:&nbsp;&nbsp;Am I a good human being ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Am I a good human being ?</label></br></br>
+  <input type="radio" id="ques2" name="condition" value="Ques:&nbsp;&nbsp;Will I get married in two years ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Will I get married in two years ?</label></br></br>
+  <input type="radio" id="ques3" name="condition" value="Ques:&nbsp;&nbsp;Will I be terminated from CEDCOSS ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Will I be terminated from CEDCOSS ?</label></br></br>
+  <input type="radio" id="ques4" name="condition" value="Ques:&nbsp;&nbsp;The society will respect me or not ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">The society will respect me or not ?</label></br></br>
+  <input type="radio" id="ques5" name="condition" value="Ques:&nbsp;&nbsp;Will I be a good Engineer in future ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Will I be a good Engineer in future ?</label></br></br>
+  <input type="radio" id="ques6" name="condition" value="Ques:&nbsp;&nbsp;Am I loveable ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Am I loveable ?</label></br></br>
+  <input type="radio" id="ques7" name="condition" value="Ques:&nbsp;&nbsp;Should I take risk in terms of profession ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Should I take risk in terms of profession ?</label></br></br>
+  <input type="radio" id="ques8" name="condition" value="Ques:&nbsp;&nbsp;Am I on a right track ?" onclick="abc(this.value)">
+  <label for="question" class="textStyle">Am I on a right track ?</label></br>
+</div>
+<div id="copyQues">
+  <input type="text" id="ques" name="">
+</div>
+  <div class="button">
+    <input type="button" id="button3" onclick="getAnswer()" value="Submit">
+  </div>
+</div>
+<div class=textStyle id="quesAns">
+  <h2 id="qst" class="textStyle"></h2>
+<h2 id="randomNumber" class="textStyle"></h2>
+</div>
+<div id="askNext">
+  <input type="button" id="button4" onclick="knowMore()" value="Ask Next">
+  <input type="button" id="button5" onclick="termination()" value=" Cancel ">
+</div>
+</div>
+</div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
